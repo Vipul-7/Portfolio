@@ -1,0 +1,65 @@
+.container-three {
+  height: 75vh;
+  color: #fff;
+  background-color: $color-primaary-green;
+
+  .about-me-text {
+    font-size: 2rem;
+    line-height: 1.7;
+    font-family: "Lato", sans-serif;
+
+    margin-bottom: 5rem;
+
+    p {
+      width: 30%;
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+    }
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-for-resume {
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    .resume {
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 6px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 1.6rem 2.8rem;
+
+      cursor: pointer;
+
+      transition: all 0.2s ease-in-out;
+
+      .drive-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}

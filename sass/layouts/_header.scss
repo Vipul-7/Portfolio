@@ -1,0 +1,52 @@
+.mainNav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+
+  color: $white-color;
+  background-color: $color-primary-grey;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2.4rem 5rem;
+  text-transform: uppercase;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.nav-link {
+  font-size: 3.2rem;
+  line-height: 1.5;
+
+  
+
+  a {
+    color: $white-color;
+    text-decoration: none;
+  }
+}
+
+.nav-actions {
+  font-size: 1.6rem;
+  transition: all .15s ease-in-out;
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      padding: 1.6rem;
+
+      &:hover{
+        color: #16a98c;
+        cursor: pointer;
+      }
+    }
+  }
+}
