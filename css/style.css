@@ -274,3 +274,35 @@ body {
             margin-right: 1rem; }
     .container-four .skills__section-1 .section-one {
       margin-bottom: 5rem; }
+
+.container-five {
+  height: 75vh;
+  background-color: #18bc9c;
+  color: #fff;
+  font-family: "Montserrat", sans-serif; }
+  .container-five .education {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; }
+    .container-five .education__title {
+      display: flex;
+      align-items: center;
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 1; }
+      .container-five .education__title span {
+        color: #f9f7f6;
+        font-size: 1.5rem;
+        margin-left: 1rem; }
+    .container-five .education__parent-board {
+      font-size: 2rem;
+      line-height: 1.6; }
+    .container-five .education__duration {
+      color: #f9f7f6;
+      font-size: 1.5rem;
+      line-height: 1.6; }
+    .container-five .education__score {
+      font-size: 1.5rem;
+      line-height: 1.6; }
