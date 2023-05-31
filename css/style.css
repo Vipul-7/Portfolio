@@ -40,15 +40,18 @@ body {
 
 .nav-actions {
   font-size: 1.6rem;
-  transition: all .15s ease-in-out; }
+  transition: all 0.15s ease-in-out; }
   .nav-actions ul {
     display: flex;
     list-style: none; }
     .nav-actions ul li {
       padding: 1.6rem; }
-      .nav-actions ul li:hover {
-        color: #16a98c;
-        cursor: pointer; }
+      .nav-actions ul li a {
+        color: #fff;
+        text-decoration: none; }
+        .nav-actions ul li a:hover {
+          color: #16a98c;
+          cursor: pointer; }
 
 .footer {
   height: 22vh;
@@ -126,7 +129,8 @@ body {
     .container-one .photo img {
       width: 260px;
       height: 260px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      border: 0.5rem solid #fff; }
   .container-one .name {
     font-size: 7.6rem;
     font-weight: 700;
@@ -178,7 +182,61 @@ body {
     .container-two .projects .grid-item {
       height: 29rem;
       width: 40rem;
-      background-color: red; }
+      background-color: red;
+      border-radius: 1rem; }
+      .container-two .projects .grid-item:hover .project__hover {
+        opacity: 1; }
+    .container-two .projects__item1 {
+      background-image: url("../../Image/book-tracker.png");
+      opacity: 0.8;
+      background-size: cover; }
+    .container-two .projects__item2 {
+      background-image: url("../../Image/amazon-clone.png");
+      opacity: 0.8;
+      background-size: cover; }
+    .container-two .projects__item3 {
+      background-image: url("../../Image/food-order.png");
+      opacity: 0.8;
+      background-size: cover; }
+    .container-two .projects__item4 {
+      background-image: url("../../Image/disneyPlus-clone.png");
+      opacity: 0.8;
+      background-size: cover; }
+    .container-two .projects__item5 {
+      background-image: url("../../Image/trillo.png");
+      opacity: 0.8;
+      background-size: cover; }
+    .container-two .projects__item6 {
+      background-image: url("../../Image/book-tracker.png");
+      opacity: 0.8;
+      background-size: contain; }
+    .container-two .projects .project__hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      border-radius: inherit;
+      background-image: linear-gradient(to right bottom, rgba(96, 183, 81, 0.85), rgba(40, 180, 133, 0.85)); }
+      .container-two .projects .project__hover h3 {
+        font-size: 2.4rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 1rem; }
+      .container-two .projects .project__hover .project__links {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container-two .projects .project__hover .project__links a svg {
+          width: 5rem;
+          height: 5rem;
+          fill: #d8d5d5;
+          margin-right: 1rem; }
+        .container-two .projects .project__hover .project__links a:hover {
+          transform: translateY(-0.3rem); }
+          .container-two .projects .project__hover .project__links a:hover svg {
+            fill: #2c3e50; }
 
 .container-items {
   width: 100%;

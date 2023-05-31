@@ -9,11 +9,100 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 3rem;
+    // transition: all .3s ease-in-out;
 
     .grid-item {
       height: 29rem;
       width: 40rem;
       background-color: red;
+      border-radius: 1rem;
+
+      &:hover{
+
+        .project__hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    // linear-gradient(to right bottom, rgba(126, 213, 111, 0.3), rgba(40, 180, 133, .3)),
+
+    &__item1 {
+      background-image: url("../../Image/book-tracker.png");
+      opacity: 0.8;
+
+      background-size: cover;
+    }
+    &__item2 {
+      background-image: url("../../Image/amazon-clone.png");
+      opacity: 0.8;
+      background-size: cover;
+    }
+    &__item3 {
+      background-image: url("../../Image/food-order.png");
+      opacity: 0.8;
+      background-size: cover;
+    }
+    &__item4 {
+      background-image: url("../../Image/disneyPlus-clone.png");
+      opacity: 0.8;
+      background-size: cover;
+    }
+    &__item5 {
+      background-image: url("../../Image/trillo.png");
+      opacity: 0.8;
+      background-size: cover;
+    }
+    &__item6 {
+      background-image: url("../../Image/book-tracker.png");
+      opacity: 0.8;
+      background-size: contain;
+    }
+
+    .project__hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      border-radius: inherit;
+
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(96, 183, 81, 0.85),
+        rgba(40, 180, 133, 0.85)
+      );
+
+      h3 {
+        font-size: 2.4rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      .project__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // height: 100%;
+
+        a {
+          svg {
+            width: 5rem;
+            height: 5rem;
+            fill: #d8d5d5;
+            margin-right: 1rem;
+          }
+
+          &:hover {
+            transform: translateY(-0.3rem);
+            svg {
+              fill: $color-primary-grey;
+            }
+          }
+        }
+      }
     }
   }
 }
