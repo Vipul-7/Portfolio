@@ -1,5 +1,4 @@
 .container-three {
-  height: 75vh;
   color: #fff;
   background-color: $color-primary-green;
 
@@ -11,15 +10,13 @@
     margin-bottom: 5rem;
 
     p {
-      width: 30%;
-
       &:not(:last-child) {
         margin-right: 5rem;
       }
     }
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 
   .button-for-resume {

@@ -1,21 +1,24 @@
 .container-two {
   background-color: #fff;
-  height: 121vh;
   color: $color-primary-grey;
   font-family: "Montserrat", sans-serif;
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 3rem;
     // transition: all .3s ease-in-out;
 
     .grid-item {
       height: 29rem;
-      width: 40rem;
+      // width: 40rem;
       background-color: red;
       border-radius: 1rem;
+      
+      p{
+        width: 30%;
+      }
 
       &:hover{
 
