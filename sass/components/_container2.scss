@@ -1,27 +1,23 @@
 .container-two {
   background-color: #fff;
   color: $color-primary-grey;
-  font-family: "Montserrat", sans-serif;
+  font-family:$font-family;
 
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 3rem;
-    // transition: all .3s ease-in-out;
 
     .grid-item {
       height: 29rem;
-      // width: 40rem;
-      background-color: red;
       border-radius: 1rem;
-      
-      p{
+
+      p {
         width: 30%;
       }
 
-      &:hover{
-
+      &:hover {
         .project__hover {
           opacity: 1;
         }
@@ -52,7 +48,7 @@
       background-size: cover;
     }
     &__item5 {
-      background-image: url("../../Image/trillo.png");
+      background-image: url("../../Image/Trillo.png");
       opacity: 0.8;
       background-size: cover;
     }
