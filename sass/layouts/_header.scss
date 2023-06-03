@@ -1,6 +1,7 @@
 .mainNav {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  height: 10.5rem;
 
   color: $white-color;
   background-color: $color-primary-grey;
@@ -9,8 +10,103 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 2.4rem 5rem;
+  padding: 0 5rem;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &.scrolled {
+    height: 7.5rem;
+  }
+
+  .nav-actions {
+    font-size: 1.6rem;
+    transition: all 0.15s ease-in-out;
+    display: flex;
+    list-style: none;
+
+    transition: all 0.5s;
+
+    li {
+      padding: 1.6rem;
+      a {
+        color: $white-color;
+        text-decoration: none;
+
+        &:hover {
+          color: #16a98c;
+          cursor: pointer;
+        }
+      }
+    }
+
+    
+
+    @media only screen and (max-width: $bp-large) {
+      background-color: blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60vh;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 2rem;
+
+      // display: none;
+      // make it visully hidden
+      opacity: 0;
+      // make it non-accessible
+      pointer-events: none;
+      // Hide it from screen readers
+      visibility: hidden;
+
+      &.nav-open {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+      }
+    }
+  }
+
+  // mobile navigations
+  .btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+
+    .icon-mobile-nav {
+      height: 4.8rem;
+      width: 4.8rem;
+      color: #fff;
+    }
+
+    .icon-mobile-nav[name="menu-outline"] {
+    }
+    .icon-mobile-nav[name="close-outline"] {
+      display: none;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      display: block;
+
+      // .icon-mobile-nav[name="close-outline"] {
+      //   display: block;
+      // }
+
+      .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+      }
+      .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+      }
+    }
+  }
 }
 
 .fixed-top {
@@ -28,28 +124,5 @@
   a {
     color: $white-color;
     text-decoration: none;
-  }
-}
-
-.nav-actions {
-  font-size: 1.6rem;
-  transition: all 0.15s ease-in-out;
-  ul {
-    display: flex;
-    list-style: none;
-
-    li {
-      padding: 1.6rem;
-      a {
-        color: $white-color;
-        text-decoration: none;
-      
-
-        &:hover {
-          color: #16a98c;
-          cursor: pointer;
-        }
-      }
-    }
   }
 }

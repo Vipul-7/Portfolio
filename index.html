@@ -13,6 +13,14 @@
     />
 
     <title>Vipul Chaudhary</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <!-- header -->
@@ -20,25 +28,28 @@
       <div class="nav-link">
         <a href="#">Portfolio</a>
       </div>
-      <div class="nav-actions">
-        <ul>
-          <li>
-            <a href="#Projects">Projects</a>
-          </li>
-          <li>
-            <a href="#About">About</a>
-          </li>
-          <li>
-            <a href="#Skills">Skills</a>
-          </li>
-          <li>
-            <a href="#Education">Education</a>
-          </li>
-          <li>
-            <a href="#Footer">Contact</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav-actions">
+        <li>
+          <a href="#Projects">Projects</a>
+        </li>
+        <li>
+          <a href="#About">About</a>
+        </li>
+        <li>
+          <a href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a href="#Education">Education</a>
+        </li>
+        <li>
+          <a href="#Footer">Contact</a>
+        </li>
+      </ul>
+
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
     </header>
 
     <!-- container for photo, name and short intro -->
@@ -630,5 +641,6 @@
         </section>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
