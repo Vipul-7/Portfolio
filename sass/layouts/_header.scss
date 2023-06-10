@@ -39,8 +39,6 @@
       }
     }
 
-    
-
     @media only screen and (max-width: $bp-large) {
       background-color: blue;
       position: absolute;
@@ -95,10 +93,6 @@
     @media only screen and (max-width: $bp-large) {
       display: block;
 
-      // .icon-mobile-nav[name="close-outline"] {
-      //   display: block;
-      // }
-
       .nav-open .icon-mobile-nav[name="menu-outline"] {
         display: none;
       }
@@ -107,6 +101,15 @@
       }
     }
   }
+
+  // @media only screen and (max-width: $bp-large) {
+  //   .nav-open .icon-mobile-nav[name="menu-outline"] {
+  //     display: none;
+  //   }
+  //   .nav-open .icon-mobile-nav[name="close-outline"] {
+  //     display: block;
+  //   }
+  // }
 }
 
 .fixed-top {
