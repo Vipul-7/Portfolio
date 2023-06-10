@@ -1,7 +1,7 @@
 .container-two {
   background-color: #fff;
   color: $color-primary-grey;
-  font-family:$font-family;
+  font-family: $font-family;
 
   .projects {
     display: grid;
@@ -48,12 +48,12 @@
       background-size: cover;
     }
     &__item5 {
-      background-image: url("../../Image/Trillo.png");
+      background-image: url("../../Image/na-tour.png");
       opacity: 0.8;
       background-size: cover;
     }
     &__item6 {
-      background-image: url("../../Image/book-tracker.png");
+      background-image: url("../../Image/nexter-grid.png");
       opacity: 0.8;
       background-size: contain;
     }
