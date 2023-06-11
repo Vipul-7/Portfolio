@@ -2,6 +2,7 @@
   background-color: #fff;
   color: $color-primary-grey;
   font-family: "Montserrat", sans-serif;
+  
 
   .skills {
     line-height: 1.2;
@@ -14,7 +15,6 @@
 
     @media screen and (max-width: 610px) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
     }
 
     &__section {
