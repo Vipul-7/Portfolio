@@ -18,10 +18,18 @@
       font-weight: 500;
       line-height: 1;
 
+      @media screen and (max-width: 610px) {
+        font-size: 2rem;
+      }
+
       span {
         color: $color-grey-light-1;
         font-size: 1.5rem;
         margin-left: 1rem;
+
+        @media screen and (max-width: 610px) {
+          margin-left: 0;
+        }
       }
     }
 
