@@ -8,8 +8,6 @@
 
   display: flex;
   align-items: center;
-  // justify-content: space-between;
-
   padding: 0 5rem;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -29,9 +27,14 @@
     li {
       padding: 1.6rem;
       a {
-        color: $white-color;
-        text-decoration: none;
+        &:link,
+        &:visited {
+          color: $white-color;
+          text-decoration: none;
+        }
 
+        &:active,
+        &:focus,
         &:hover {
           color: #16a98c;
           cursor: pointer;
@@ -40,12 +43,12 @@
     }
 
     @media only screen and (max-width: $bp-large) {
-      background-color: blue;
+      background-color: $color-primary-grey;
       position: absolute;
-      top: 0;
+      top: 5rem;
       left: 0;
       width: 100%;
-      height: 60vh;
+      height: 50vh;
 
       display: flex;
       align-items: center;
@@ -61,11 +64,27 @@
       pointer-events: none;
       // Hide it from screen readers
       visibility: hidden;
+      transform: translateX(0);
 
       &.nav-open {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
+        transform: translateX(5);
+      }
+
+      &.nav-open ~ .btn-mobile-nav span {
+        background-color: transparent;
+
+        &::after {
+          top: 0;
+          transform: rotate(135deg);
+        }
+
+        &::before {
+          top: 0;
+          transform: rotate(-135deg);
+        }
       }
     }
   }
@@ -75,41 +94,38 @@
     border: none;
     background: none;
     cursor: pointer;
-
+    position: relative;
     display: none;
 
-    .icon-mobile-nav {
-      height: 4.8rem;
-      width: 4.8rem;
-      color: #fff;
-    }
-
-    .icon-mobile-nav[name="menu-outline"] {
-    }
-    .icon-mobile-nav[name="close-outline"] {
-      display: none;
+    span {
+      &::after,
+      &::before {
+        position: absolute;
+        right: 0;
+        content: "";
+        transition: all 0.2s;
+      }
+      &::after {
+        top: 1rem;
+      }
+      &::before {
+        top: -1rem;
+      }
+      &,
+      &::after,
+      &::before {
+        display: block;
+        height: 2px;
+        width: 3rem;
+        margin-bottom: 0.5rem;
+        background-color: $white-color;
+      }
     }
 
     @media only screen and (max-width: $bp-large) {
       display: block;
-
-      .nav-open .icon-mobile-nav[name="menu-outline"] {
-        display: none;
-      }
-      .nav-open .icon-mobile-nav[name="close-outline"] {
-        display: block;
-      }
     }
   }
-
-  // @media only screen and (max-width: $bp-large) {
-  //   .nav-open .icon-mobile-nav[name="menu-outline"] {
-  //     display: none;
-  //   }
-  //   .nav-open .icon-mobile-nav[name="close-outline"] {
-  //     display: block;
-  //   }
-  // }
 }
 
 .fixed-top {
